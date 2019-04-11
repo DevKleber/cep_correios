@@ -1,10 +1,9 @@
 <?php 
 class CorreioCep
 {
-    private $cep;
-
-    function __construct($cep) {
-        $this->getLogradouroCorreio($cep);
+    
+    function __construct() {
+        // $this->getLogradouroCorreio($cep);
     }
 
     public function consultaCepCorreio($cep){
@@ -51,6 +50,7 @@ class CorreioCep
         
         return [
             "localidade" => $cidade,
+            "uf" => $uf,
             "bairro" => $bairro,
             "tipo_logradouro" => $tipo_logradouro,
             "logradouro" => $logradouro,
