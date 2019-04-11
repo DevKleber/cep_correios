@@ -2,8 +2,10 @@
 Consuta o cep no site dos correios e retorna um array
 
 Como usar:
+```
 $cep = new CorreioCep();
 $log = $cep->getLogradouroCorreio("74223060");
+```
 
 # Retorno:
 
